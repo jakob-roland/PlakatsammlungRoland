@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDC1Q2DPEV"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-WDC1Q2DPEV');
+	</script>
+
+	<title>Plakatsammlung Roland - Plakate des 20. Jahrhunderts</title>
+	<link rel="stylesheet" href="styleSheet_plakatsammlung.css"/>
+	<meta charset="UTF-8">
+	<meta name="description" content="Homepage der Plakatsammlung Roland. Österreichische Plakate des 20. Jahrhunderts von verschiedenen Künstlern wie Tino Erben, Hans Fabigan, Gerti Fröhlich und Irmgard Grillmayer. 
+	Die Plakate bewerben vorwiegend Kulturveranstaltungen, aber auch Produkte, Politik und Tourismus und bieten interessante Einblicke in die jeweilige Epoche.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+	<div class="titel">
+		<a class="noDecorations" href="index.html">Plakatsammlung Roland</a>
+	</div>
+	<hr>
+	<div class="sitemap">
+		<a href="index.html">Home</a>
+		||
+		<a href="impressum.html">Impressum</a>
+	</div>
+	<div id="suchleiste">
+		<label for="suchfeld"> Plakatsuche </label>
+		<input type="search" id="suchfeld">
+		<button id="losKnopf"> Los </button>
+		<input type="checkbox" id="cbExakt">
+		<label for="cbExakt"> Exakte Suche | </label>
+		<!-- Anzahl der Ergebnisse von JavaScript-->
+
+		
+	</div>
+	<br>
+
+	<div id="checkboxes"> <!-- Wählt die Spalten, in denen gesucht werden soll -->
+		||
+		<input type="checkbox" id="cbID" checked>
+		<label for="ID"> ID |</label>
+		<input type="checkbox" id="cbOrt - Institution - Firma" checked>
+		<label for="Ort - Institution - Firma"> Ort - Institution - Firma |</label>
+		<input type="checkbox" id="cbTitel" checked>
+		<label for="Titel"> Titel |</label>
+		<input type="checkbox" id="cbJahr" checked>
+		<label for="Jahr"> Jahr |</label>
+		<input type="checkbox" id="cbKünstler" checked>
+		<label for="Künstler"> Künstler |</label>
+		<input type="checkbox" id="cbDruckerei" checked>
+		<label for="Druckerei"> Druckerei |</label>
+		<input type="checkbox" id="cbKategorie" checked>
+		<label for="Kategorie"> Kategorie |</label>
+		<input type="checkbox" id="cbNotae" checked>
+		<label for="Notae"> Notae |</label>
+		<input type="checkbox" id="cbAlle" checked>
+		<label for="Alle"> Alle |</label>
+
+		<label for="sortierDropdown"> | Sortieren nach: </label>
+		<select id="sortierDropdown">
+			<option value="ID">ID</option>
+			<option value="Ort - Institution - Firma">Ort - Institution - Firma</option>
+			<option value="Titel">Titel</option>
+			<option value="Jahr">Jahr</option>
+			<option value="Künstler">Künstler</option>
+			<option value="Druckerei">Druckerei</option>
+			<option value="Kategorie">Kategorie</option>
+		</select>
+		<input type="checkbox" id="reverseSort">
+		<label for="reverseSort"> Invertieren ||</label>
+
+		<!-- <input type="checkbox" id="edit"> EDIT MODE DEACTIVATED
+		<label for="edit"> Bearbeiten ||</label> -->
+	</div>
+	<hr>
+
+	<ul id="display"> <!-- Hier werden die Suchergebnisse angezeigt -->
+		<!-- JavaScript fügt hier die Suchergebnisse ein -->
+	</ul>
+
+	<div id="modal"> <!-- unsichtbares Modal; wird von Javascript befüllt -->
+		<div id="modalContent"> <!-- Modal Content box - unsichtbar -->
+			<span class="close">&times;</span> <!-- X zum Schließen des Modals -->
+			<div id="modalContainer">
+				<a id="imgLink" target="_blank">
+					<img id="modalIMG" src="" alt="Image not found">
+				</a>
+				<div id="modalTextContainer"></div>
+			</div>
+		</div>
+	</div> 
+
+	<script type="module" src="plakatBrowser.js"></script>
+</body>
+
+<footer>
+	<hr>
+		<h4>Sammlung Roland 2023</h4>
+		<a href="index.html">Home</a></br>
+		<a href="impressum.html">Impressum</a>
+</footer>
+
+</html>

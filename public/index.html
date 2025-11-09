@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDC1Q2DPEV"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-WDC1Q2DPEV');
+	</script>
+
+	<title>Plakatsammlung Roland - Plakate des 20. Jahrhunderts</title>
+	<link rel="stylesheet" href="styleSheet_plakatsammlung.css"/>
+	<meta charset="UTF-8">
+	<meta name="description" content="Homepage der Plakatsammlung Roland. Österreichische Plakate des 20. Jahrhunderts von verschiedenen Künstlern wie Tino Erben, Hans Fabigan, Gerti Fröhlich und Irmgard Grillmayer. 
+	Die Plakate bewerben vorwiegend kulturelle Veranstaltungen, aber auch Produkte, Politik und Tourismus und bieten interessante Einblicke in die jeweilige Epoche.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body class="thinBody">
+	<div class="titel">
+		<a class="noDecorations" href="index.html">Plakatsammlung Roland</a>
+	</div>
+	<hr>
+	
+	<a href="plakatsuche.html">Zur Plakatsuche</a>
+	||
+	<a href="impressum.html">Impressum</a>
+
+	<h1>Über die Sammlung</h1>
+	<p>Die Sammlung besteht aus einem Bestand den Ing. Robert Hartwig zusammengetragen hatte und der dann versteigert wurde. <br> 
+		Einen Teil davon, dessen Schwerpunkt österreichische Plakate der 1950er bis 1970er Jahre bildet (knapp 1200 Stück) wird hier vorgestellt. Einzelne frühere Stücke bereichern die Sammlung. </p>
+	<p>Künstler wie Tino Erben, Hans Fabigan, Gerti Fröhlich, Irmgard Grillmayer, Wilhelm Jaruska, Hermann Kosel, Fritz Krainz, Herbert Pass, Walter Rauchberger, Georg Schmid, Ernst Trauner und Elisabeth Turolt, prägen den Bestand.<br>
+		Ein breites Spektrum weiterer Positionen zum Plakat geben einen repräsentativen Einblick in das Genre.</p>
+	<p>Thematisch dominieren Kulturveranstaltungen (Ausstellungen, Theater), Produktwerbung, Politik und Tourismus weiten den Blick auf viele Realitäten der Epochen, aus denen die Plakate stammen.</p>
+	<p>Die <a href="plakatsuche.html">Sammlung</a> ist durch eine Datenbank erschlossen, die eine Volltextsuche und spezifische Suchoptionen bietet.</p>
+	<p>Falls Sie Informationen ergänzen wollen oder an einzelnen Stücken Interesse haben, nehmen Sie Kontakt auf: <a href="mailto:plakatsammlung.roland@hotmail.com">plakatsammlung.roland@hotmail.com</a> </p>
+
+	<!-- <h1>Eine Reise durch die Zeit</h1>
+	<p>Die Medien der Vergangenheit bieten einen interessanten Einblick in die Gewohnheiten, Vorlieben, Ideologien, Emotionen, den Alltag einer Zeit.</p>
+	<p>Historische Plakate, einst gedacht dem Menschen etwas zu verkaufen, ihn zu etwas einzuladen oder ihn zu beeinflussen, lassen uns heute den Stil, die Probleme und Hoffnungen von Österreichs in der Mitte des letzen Jahrhunderts nachempfinden.</p>
+	<p>Diese <a href="plakatsuche.html">Sammlung</a> zeigt Plakate aus einer Zeit, wo Werbung auf einer kleineren Skala, analog und weniger allgegenwärtig als heute funktionierte.</p> -->
+
+	<div class="featured_Container">
+		<div class="counter" id="timeCounter">0</div>
+		<img id="featuredImg" src="images/P_1a.JPG">
+		<button id="featured_rightArrow">></button>
+		<button id="featured_leftArrow"><</button>
+
+		<div class="featuredText">
+			<p class="bold">ID:</p>
+			<p id="timeAttribute_ID"></p>
+			<p class="bold">Ort - Institution - Firma:</p>
+			<p id="timeAttribute_Ort - Institution - Firma"></p>
+			<p class="bold">Titel:</p>
+			<p id="timeAttribute_Titel"></p>
+			<p class="bold">Jahr:</p>
+			<p id="timeAttribute_Jahr"></p>
+			<p class="bold">Künstler:</p>
+			<p id="timeAttribute_Künstler"></p>
+			<p class="bold">Zum Plakat:</p>
+			<a id="timeAttribute_Link" href="plakatsuche.html"> Zur Sammlung </a>		
+		</div>
+	</div>
+
+	<script type="module" src="indexJS.js"></script>
+</body>
+
+<footer>
+	<hr>
+		<h4>Sammlung Roland 2023</h4>
+		<a href="plakatsuche.html">Plakatsuche</a><br />
+		<a href="impressum.html">Impressum</a>
+</footer>
+
+</html>
