@@ -186,7 +186,7 @@ function createModal(result, attribute){
         // adds permalink
             let paragraph = document.createElement("p");
             paragraph.classList.add("remove");
-            paragraph.innerHTML = "Permalink:";
+            paragraph.innerHTML = "Link:";
             paragraph.style.fontWeight = "bold"
             modalTextContainer.appendChild(paragraph);
 

@@ -23,7 +23,7 @@ async function displayFeatured(num){
             .then((response) => p.innerHTML = response[attribute[i]])
     }
     let a = document.getElementById("timeAttribute_Link")
-    a.innerHTML = `${window.location.host}/plakatsuche.html?id=${ID}`
+    //a.innerHTML = `${window.location.host}/plakatsuche.html?id=${ID}`
     a.href = `/plakatsuche.html?id=${ID}`
 
     
