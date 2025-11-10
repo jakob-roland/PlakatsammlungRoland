@@ -109,7 +109,7 @@ function createModal(result, attribute){
     let modalIMG = document.getElementById("modalIMG"); // gets modal img
     let imgLink = document.getElementById("imgLink")
 
-    let img_folder = "images"
+    let img_folder = "https://res.cloudinary.com/dppoc515v/image/upload/v1762814197"
     // If there are more than one picture associated with an ID...
     if (result["ID"].includes("a")){
         let name = result["ID"].substring(0, result["ID"].length - 3)
@@ -280,7 +280,7 @@ function editSave(attribute, ID){
 }
 
 function nextPicModal(richtung, result){
-    let img_folder = "images"
+    let img_folder = "https://res.cloudinary.com/dppoc515v/image/upload/v1762814197"
 
     let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     let letters = alphabet.slice(0, alphabet.indexOf(result["ID"].slice(-1))+1)

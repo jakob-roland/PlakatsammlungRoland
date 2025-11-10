@@ -37,5 +37,6 @@ app.get("/data", (req, res) => {
     res.send(object);
 }); */
 
-app.listen(8080, () => console.log("App listening on port 8080"));
+const PORT = 8080;
+app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
 

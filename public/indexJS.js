@@ -5,7 +5,7 @@ let counter = document.getElementById("timeCounter")
 
 let IDs = ["511", "524-verso", "532", "501", "1128a-f", "530", "673", "306", "387a-b", "1179a-c", "31a-d"]
 let fotoIDs = ["511", "524-verso", "532", "501", "1128a", "530", "673", "306", "387a", "1179a", "31b"]
-let img_folder = "images"
+let img_folder = "https://res.cloudinary.com/dppoc515v/image/upload/v1762814197"
 
 async function displayFeatured(num){
     let ID = IDs[num]
@@ -25,8 +25,6 @@ async function displayFeatured(num){
     let a = document.getElementById("timeAttribute_Link")
     //a.innerHTML = `${window.location.host}/plakatsuche.html?id=${ID}`
     a.href = `/plakatsuche.html?id=${ID}`
-
-    
 }
 
 function nextFeatured(direction){
