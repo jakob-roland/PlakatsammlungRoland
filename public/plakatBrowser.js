@@ -80,6 +80,7 @@ function neuesBild(result){
     bild.src = `${img_folder}/P_${IDb}.JPG`;
     bild.alt = `Bild nicht gefunden. ID = ${IDb}`;
     bild.classList.add("image");
+    bild.loading = "lazy"
     container.appendChild(bild);
 
     let overlay = document.createElement("div");
